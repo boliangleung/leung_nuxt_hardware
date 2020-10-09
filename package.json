@@ -23,11 +23,14 @@
     "@nuxtjs/axios": "^5.12.2",
     "ant-design-vue": "^1.6.5",
     "core-js": "^3.6.5",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
     "nuxt": "^2.14.5"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/style-resources": "^1.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.8.1",
     "eslint-config-prettier": "^6.11.0",

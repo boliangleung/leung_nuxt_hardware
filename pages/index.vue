@@ -1,8 +1,13 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">leung_hardware</h1>
+      <div class="tab-title">
+            {{ tabNative }}
+      </div>
+  
+      <Product></Product>
+      <!-- <h1 class="title">leung_hardware 学习 nuxt</h1>
+      <div class="titl2">test less</div>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -19,24 +24,39 @@
           class="button--grey"
         >
           GitHub
-        </a>
+        </a> -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import { state } from 'vuex'
+export default {
+  props: ['native'],
+  computed: {
+    tabNative() {
+      return this.$store.state.tabNative
+    },
+  },
+}
 </script>
 
-<style>
+<style lang="less" scoped>
+.tab-title{
+  height: 80px;
+  width: 256px;
+  background: #1890FF;
+  .flex-center();
+    color: #ffffff;
+    font-size: 32px;
+}
+.titl2 {
+  color: @theme-color;
+}
 .container {
   margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  // min-height: 50vh;
 }
 
 .title {
