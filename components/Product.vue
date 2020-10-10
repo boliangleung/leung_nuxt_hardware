@@ -25,6 +25,7 @@
   </div>
 </template>
 <script>
+import { layoutJson } from '@/assets/js/layoutJson'
 const tabList = [
   {
     title: '首页',
@@ -61,7 +62,7 @@ export default {
   data() {
     return {
       current: ['home'],
-      tabList: Object.freeze(tabList),
+      tabList: Object.freeze(layoutJson),
       productDetail: [
         '波形弹簧',
         '弹性挡圈',
@@ -79,7 +80,7 @@ export default {
 </script>
 <style lang="less" scoped>
 .tab {
-  .flex-start();
+  margin-left: 30px;
 }
 li.ant-menu-item,
 li.ant-menu-submenu.ant-menu-submenu-vertical,

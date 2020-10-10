@@ -24,12 +24,12 @@ export default {
 
 <style lang="less" scoped>
 .footer {
+  height: 225px;
+  background: #2e2e2e;
   border-top: 2px solid #e8e8e8;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  color: #ffffff;
   .flex-column();
+  justify-content: center;
   img {
     width: 60px;
     height: 60px;

@@ -1,89 +1,55 @@
 <template>
   <div class="tab">
-    <a-menu v-model="current" mode="horizontal" @select="selectTab">
-      <a-sub-menu>
-        <span slot="title" class="submenu-title-wrapper"
-          ><a-icon type="setting" />产品中心</span
-        >
-        <a-menu-item-group title="NorthFull 优质系列">
-          <a-menu-item
-            v-for="(item, index) in productDetail"
-            :key="'productList:' + index"
-          >
-            {{ item }}
-          </a-menu-item>
-        </a-menu-item-group>
-        <!-- <a-menu-item-group title="Item 2">
-          <a-menu-item key="productList:3"> Option 3 </a-menu-item>
-          <a-menu-item key="productList:4"> Option 4 </a-menu-item>
-        </a-menu-item-group> -->
-      </a-sub-menu>
-      <a-menu-item v-for="target in tabList" :key="target.key">
-        <a-icon :type="target.type" />{{ target.title }}
-      </a-menu-item>
-    </a-menu>
+    <a-carousel arrows :autoplay="true">
+      <div slot="prevArrow" class="custom-slick-arrow left-icon">
+        <a-icon type="left-circle" />
+      </div>
+      <div slot="nextArrow" class="custom-slick-arrow" style="right: 50px">
+        <a-icon type="right-circle" />
+      </div>
+      <div><h3>1</h3></div>
+      <div><h3>2</h3></div>
+      <div><h3>3</h3></div>
+      <div><h3>4</h3></div>
+    </a-carousel>
   </div>
 </template>
 <script>
-const tabList = [
-  {
-    title: '首页',
-    key: 'home',
-    type: 'appstore',
-  },
-  {
-    title: '公司简介',
-    key: 'introduce',
-    type: 'appstore',
-  },
-  {
-    title: '产品中心',
-    key: 'productList',
-    type: 'setting',
-  },
-  {
-    title: '企业动态',
-    key: 'dynamic',
-    type: 'appstore',
-  },
-  {
-    title: '联系我们',
-    key: 'contact',
-    type: 'phone',
-  },
-  {
-    title: '招贤纳士',
-    key: 'talent',
-    type: 'user-add',
-  },
-]
-export default {
-  data() {
-    return {
-      current: ['home'],
-      tabList: Object.freeze(tabList),
-      productDetail: [
-        '波形弹簧',
-        '弹性挡圈',
-        '双螺旋弹簧',
-        '密封产品',
-        '碟形弹簧',
-        '模具弹簧',
-        '博鼎模具弹簧',
-        '进口及国产氮气弹簧',
-      ],
-    }
-  },
-  methods: {
-    selectTab({ key }) {
-      this.$store.commit('toggleTab', key)
-    },
-  },
-}
+export default {}
 </script>
-<style lang="less" scoped>
+<style scoped>
+/* For demo */
+.ant-carousel >>> .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+
+.ant-carousel >>> .custom-slick-arrow {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  color: #fff;
+  background-color: rgba(31, 45, 61, 0.11);
+  opacity: 0.3;
+}
+.ant-carousel >>> .custom-slick-arrow:before {
+  display: none;
+}
+.ant-carousel >>> .custom-slick-arrow:hover {
+  opacity: 0.5;
+}
+
+.ant-carousel >>> .slick-slide h3 {
+  color: #fff;
+}
+.left-icon {
+  left: 50px;
+  z-index: 10;
+}
 .tab {
-  .flex-center();
-  border-bottom: 2px solid #e8e8e8;
+  margin-top: 120px;
 }
 </style>

@@ -1,41 +1,19 @@
 <template>
-  <div class="container">
+  <div v-cloak class="container">
     <div>
       <div class="tab-title">
             {{ tabNative }}
       </div>
-  
       <Product></Product>
-      <!-- <h1 class="title">leung_hardware 学习 nuxt</h1>
-      <div class="titl2">test less</div>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a> -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { state } from 'vuex'
 export default {
-  props: ['native'],
   computed: {
-    tabNative() {
+    tabNative () {
       return this.$store.state.tabNative
     },
   },
@@ -43,20 +21,20 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.tab-title{
+.tab-title {
   height: 80px;
   width: 256px;
-  background: #1890FF;
+  margin-left: 30px;
+  background: #1890ff;
   .flex-center();
-    color: #ffffff;
-    font-size: 32px;
+  color: #ffffff;
+  font-size: 32px;
 }
 .titl2 {
   color: @theme-color;
 }
 .container {
   margin: 0 auto;
-  // min-height: 50vh;
 }
 
 .title {
