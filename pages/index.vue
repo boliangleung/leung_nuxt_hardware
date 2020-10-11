@@ -1,11 +1,7 @@
 <template>
   <div v-cloak class="container">
     <div>
-      <div class="tab-title">
-            {{ tabNative }}
-      </div>
       <Product></Product>
-      </div>
     </div>
   </div>
 </template>
@@ -13,7 +9,7 @@
 <script>
 export default {
   computed: {
-    tabNative () {
+    tabNative() {
       return this.$store.state.tabNative
     },
   },

@@ -41,11 +41,6 @@ const tabList = [
     type: 'appstore',
   },
   {
-    title: '产品中心',
-    key: 'productList',
-    type: 'setting',
-  },
-  {
     title: '企业动态',
     key: 'dynamic',
     type: 'appstore',
@@ -87,7 +82,7 @@ export default {
 </script>
 <style lang="less" scoped>
 .title {
-  padding-top: 30px;
+  padding-top: 20px;
   width: 100%;
   height: 100px;
   position: fixed;
@@ -99,9 +94,7 @@ export default {
   color: @theme-color;
   font-size: 36px;
   width: 100%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
+  .flex-center();
   .name {
     margin-right: 30px;
   }

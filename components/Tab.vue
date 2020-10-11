@@ -1,16 +1,16 @@
 <template>
-  <div class="tab">
-    <a-carousel arrows :autoplay="true">
+  <div v-cloak class="tab" style="width: 100%; background: yellow">
+    <a-carousel arrows :autoplay="true" style="width: 100%">
       <div slot="prevArrow" class="custom-slick-arrow left-icon">
         <a-icon type="left-circle" />
       </div>
       <div slot="nextArrow" class="custom-slick-arrow" style="right: 50px">
         <a-icon type="right-circle" />
       </div>
-      <div><h3>1</h3></div>
-      <div><h3>2</h3></div>
-      <div><h3>3</h3></div>
-      <div><h3>4</h3></div>
+      <div><h3>欢迎轮播图1</h3></div>
+      <div><h3>欢迎轮播图2</h3></div>
+      <div><h3>欢迎轮播图3</h3></div>
+      <div><h3>欢迎轮播图4</h3></div>
     </a-carousel>
   </div>
 </template>
@@ -50,6 +50,6 @@ export default {}
   z-index: 10;
 }
 .tab {
-  margin-top: 120px;
+  margin-top: 100px;
 }
 </style>

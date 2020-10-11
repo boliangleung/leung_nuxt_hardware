@@ -1,0 +1,107 @@
+{
+    "showMusicMetrics": false,
+    "showGitMetrics": false,
+    "showWeeklyRanking": false,
+  
+    // editor
+    "editor.tabSize": 2, //制表符符号eslint
+    "editor.formatOnSave": false, //让prettier使用eslint的代码格式进行校验
+    "prettier.semi": false, //去掉代码结尾的分号
+    "prettier.singleQuote": true, //使用单引号替代双引号
+    "prettier.printWidth": 120,
+    // "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  
+    // eslint
+    "eslint.autoFixOnSave": true, // 保存自动修复
+    "eslint.validate": [
+      //开启对.vue文件中错误的检查
+      "javascript",
+      "javascriptreact",
+      {
+        "language": "html",
+        "autoFix": true
+      },
+      {
+        "language": "vue",
+        "autoFix": true
+      },
+      {
+        "language": "typescript",
+        "autoFix": true
+      }
+    ],
+    // vetur
+    // 以下是默认配置
+    // "vetur.format.defaultFormatter.html": "prettyhtml",
+    // "vetur.format.defaultFormatter.less": "prettier",
+    // "vetur.format.defaultFormatter.css": "prettier",
+    // "vetur.format.defaultFormatter.scss": "prettier",
+  
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true, //让函数(名)和后面的括号之间加个空格
+    // "vetur.format.defaultFormatter.html": "js-beautify-html", //格式化.vue中html
+    "vetur.format.defaultFormatter.js": "vscode-typescript", //让vue中的js按编辑器自带的ts格式进行格式化
+  
+    // "vetur.format.defaultFormatter.js": "prettier-eslint", //让vue中的js按编辑器自带的ts格式进行格式化
+    "vetur.format.defaultFormatterOptions": {
+      "prettyhtml": {
+        "printWidth": 120, // No line exceeds 120 characters
+        "singleQuote": false // Prefer double quotes over single quotes
+      },
+      "prettier": {
+        "semi": false, // 格式化不加分号
+        "singleQuote": true // 格式化以单引号为主
+      }
+      // "js-beautify-html": {
+      //   "printWidth": 180,
+      //   "wrap_attributes": "force-aligned" //属性强制折行对齐
+      // }
+    },
+  
+    // 在默认不支持 Emmet 的语言中启用 Emmet 缩写功能
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact",
+      "wxml": "html"
+    },
+    // 启用后，按下 TAB 键，将展开 Emmet 缩写。
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.syntaxProfiles": {
+      "vue-html": "html",
+      "vue": "html",
+      "ejs": "html"
+    },
+    "files.associations": {
+      "*xxx.ejs": "html"
+    },
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "sync.gist": "6b4686210adaef4b07b67741315ca215",
+    "[vue]": {
+      "editor.defaultFormatter": "octref.vetur"
+    },
+    "vetur.validation.template": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "window.zoomLevel": 0,
+    "files.eol": "\n"
+  }
