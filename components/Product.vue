@@ -7,7 +7,10 @@
     </a-menu>
     <div class="product">
       <div class="product-detail">
-        <p>{{ selectedTarget.title }}</p>
+        <p>
+          <!-- {{ selectedTarget.title }} -->
+          <img :src="selectedTarget.logo" alt="" />
+        </p>
         <div>
           {{ selectedTarget.detail }}
         </div>
