@@ -26,22 +26,12 @@
   </div>
 </template>
 <script>
-import { layoutJson } from '@/assets/js/layoutJson'
+import { layoutMockJson } from '@/assets/js/layoutMockJson'
 export default {
   data() {
     return {
       current: ['1'],
-      tabList: Object.freeze(layoutJson),
-      productDetail: [
-        '波形弹簧',
-        '弹性挡圈',
-        '双螺旋弹簧',
-        '密封产品',
-        '碟形弹簧',
-        '模具弹簧',
-        '博鼎模具弹簧',
-        '进口及国产氮气弹簧',
-      ],
+      tabList: Object.freeze(layoutMockJson),
     }
   },
   computed: {

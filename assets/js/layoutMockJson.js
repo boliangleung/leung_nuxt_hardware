@@ -1,4 +1,4 @@
-const layoutJson = [
+const layoutMockJson = [
   {
     title: '美国 SMALLEY 波形弹簧',
     key: '1',
@@ -243,4 +243,4 @@ const layoutJson = [
   },
 ]
 
-export { layoutJson }
+export { layoutMockJson }

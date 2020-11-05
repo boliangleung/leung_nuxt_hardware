@@ -8,11 +8,8 @@
             ><a-icon type="setting" />产品中心</span
           >
           <a-menu-item-group title="NorthFull 优质系列">
-            <a-menu-item
-              v-for="(item, index) in productDetail"
-              :key="'productList:' + index"
-            >
-              {{ item }}
+            <a-menu-item v-for="item in productDetail" :key="item.key">
+              {{ item.title }}
             </a-menu-item>
           </a-menu-item-group>
           <!-- <a-menu-item-group title="Item 2">
@@ -29,6 +26,7 @@
 </template>
 
 <script>
+import { layoutMockJson } from '@/assets/js/layoutMockJson'
 const tabList = [
   {
     title: '首页',
@@ -61,16 +59,7 @@ export default {
     return {
       current: ['home'],
       tabList: Object.freeze(tabList),
-      productDetail: [
-        '波形弹簧',
-        '弹性挡圈',
-        '双螺旋弹簧',
-        '密封产品',
-        '碟形弹簧',
-        '模具弹簧',
-        '博鼎模具弹簧',
-        '进口及国产氮气弹簧',
-      ],
+      productDetail: Object.freeze(layoutMockJson),
     }
   },
   methods: {
