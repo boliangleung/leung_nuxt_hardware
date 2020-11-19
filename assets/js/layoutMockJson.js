@@ -58,7 +58,7 @@ const layoutMockJson = [
     title: 'Helicoil',
     key: '2',
     type: 'appstore',
-    logo: require('@/assets/img/tab2-logo.png'),
+    logo: require('@/assets/img/tab3-logo.png'),
     detail:
       'Helicoil螺套是原产于美国的螺套品牌，主要用于螺纹加强及修复，能够为您的需求提供高强度的耐热耐磨的高精度螺纹。',
     productList: [
@@ -80,25 +80,89 @@ const layoutMockJson = [
     title: '德国 BAUER 碟形弹簧',
     key: '3',
     type: 'appstore',
-    logo: require('@/assets/img/tab3-logo.png'),
+    logo: require('@/assets/img/tab2-logo.png'),
     detail:
       'Berg是全球微型精密机械零件的领先制造商。我们公司主要销售Berg任何材质的圆柱销。圆柱销属于定位销，用于固定零件之间的相对位置。它是组合加工和装配时候的重要辅助零件',
     productList: [
       {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品3对顶波簧1',
+        img: require('@/assets/img/luoding.jpg'),
+        name: '螺钉',
       },
       {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品3对顶波簧2',
+        img: require('@/assets/img/luoding2.jpg'),
+        name: '紧定螺钉',
       },
       {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品3对顶波簧3',
+        img: require('@/assets/img/luoding3.jpg'),
+        name: '内六角螺钉',
       },
       {
-        img: require('@/assets/img/product-img1.jpg'),
-        name: '产品3对顶波簧4',
+        img: require('@/assets/img/luoding4.jpg'),
+        name: '轴肩螺钉',
+      },
+      {
+        img: require('@/assets/img/luomu.jpg'),
+        name: '螺母',
+      },
+      {
+        img: require('@/assets/img/dianquan.jpg'),
+        name: '齿形垫',
+      },
+      {
+        img: require('@/assets/img/dianquan2.jpg'),
+        name: '弹簧垫',
+      },
+      {
+        img: require('@/assets/img/dianquan3.jpg'),
+        name: '平垫',
+      },
+      {
+        img: require('@/assets/img/dangquan.jpg'),
+        name: '挡圈',
+      },
+      {
+        img: require('@/assets/img/laliu.jpg'),
+        name: '拉铆螺母',
+      },
+      {
+        img: require('@/assets/img/laliu2.jpg'),
+        name: '拉铆螺柱',
+      },
+      {
+        img: require('@/assets/img/liuding.jpg'),
+        name: '抽芯铆钉',
+      },
+      {
+        img: require('@/assets/img/liuding2.jpg'),
+        name: '实心铆钉',
+      },
+      {
+        img: require('@/assets/img/luotao.jpg'),
+        name: '插销螺套',
+      },
+      {
+        img: require('@/assets/img/luotao2.jpg'),
+        name: '螺套',
+      },
+      {
+        img: require('@/assets/img/luotao3.jpg'),
+        name: '自攻螺套',
+      },
+      {
+        img: require('@/assets/img/dingweixiao.jpg'),
+        name: '弹簧销',
+      },
+      {
+        img: require('@/assets/img/dingweixiao2.jpg'),
+        name: '圆柱销',
+      },
+      {
+        img: require('@/assets/img/qita.jpg'),
+        name: '吊环',
+      },
+      {
+        img: require('@/assets/img/qita2.jpg'),
+        name: '内六角扳手',
       },
     ],
   },

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-cloak>
     <Head></Head>
     <Tab></Tab>
     <Nuxt />

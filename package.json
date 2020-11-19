@@ -8,7 +8,9 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint": "yarn lint:js"
+    "lint": "yarn lint:js",
+    "login":"tcb login",
+    "deploy":"tcb hosting:deploy ./dist -e leunghardware-0gbvro1hb327ca22"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint"

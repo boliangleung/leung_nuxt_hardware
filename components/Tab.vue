@@ -1,5 +1,5 @@
 <template>
-  <div v-cloak class="tab" style="width: 100%; background: yellow">
+  <div v-cloak class="tab" style="width: 100%">
     <a-carousel arrows :autoplay="true" style="width: 100%">
       <div slot="prevArrow" class="custom-slick-arrow left-icon">
         <a-icon type="left-circle" />
@@ -7,15 +7,23 @@
       <div slot="nextArrow" class="custom-slick-arrow" style="right: 50px">
         <a-icon type="right-circle" />
       </div>
-      <div><h3>欢迎轮播图1</h3></div>
-      <div><h3>欢迎轮播图2</h3></div>
-      <div><h3>欢迎轮播图3</h3></div>
-      <div><h3>欢迎轮播图4</h3></div>
+      <div v-for="(target, index) in tabList" v-cloak :key="index">
+        <img :src="target" alt="" />
+      </div>
     </a-carousel>
   </div>
 </template>
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      tabList: Object.freeze([
+        require('@/assets/img/banner2.jpg'),
+        require('@/assets/img/banner5.jpg'),
+      ]),
+    }
+  },
+}
 </script>
 <style scoped>
 /* For demo */

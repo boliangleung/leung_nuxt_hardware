@@ -83,8 +83,8 @@ li.ant-menu-submenu.ant-menu-submenu-vertical,
     flex-direction: column;
     border: 1px solid @gray-color;
     img {
-      height: 150px;
-      width: 150px;
+      height: 100px;
+      width: 100px;
       margin-bottom: 10px;
     }
     &:hover {

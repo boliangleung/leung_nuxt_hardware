@@ -1,6 +1,6 @@
 <template>
   <div class="title">
-    <div class="name">北富联|NorthFull</div>
+    <div class="name">北富联机电|NorthFull</div>
     <div class="tab">
       <a-menu v-model="current" mode="horizontal" @select="selectTab">
         <a-sub-menu>
@@ -82,6 +82,7 @@ export default {
   text-align: center;
   color: @theme-color;
   font-size: 36px;
+  box-shadow: 0 4px 10px #eaeaea;
   width: 100%;
   .flex-center();
   .name {
