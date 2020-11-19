@@ -34,7 +34,7 @@ const tabList = [
     type: 'appstore',
   },
   {
-    title: '公司简介',
+    title: '公司简介 ',
     key: 'introduce',
     type: 'appstore',
   },
