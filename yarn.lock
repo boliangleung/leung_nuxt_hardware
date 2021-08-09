@@ -2104,10 +2104,10 @@ ansi-styles@^4.0.0, ansi-styles@^4.1.0:
     "@types/color-name" "^1.1.1"
     color-convert "^2.0.1"
 
-ant-design-vue@^1.6.5:
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/ant-design-vue/-/ant-design-vue-1.6.5.tgz#82f69846d921c220d04bb9ef9a6c40605e146e6c"
-  integrity sha512-FzLrK+JuJUq+g4vd+UjFFi13ZdSsb11EZFapisFXilJxpc1LxqyunZu5AP4nr9vFLs3J4UX2A6q+Rp/Fi6JrLg==
+ant-design-vue@^1.7.7:
+  version "1.7.7"
+  resolved "https://registry.yarnpkg.com/ant-design-vue/-/ant-design-vue-1.7.7.tgz#621cca28c89e2887ec391e5c129c34d463f3803e"
+  integrity sha512-h7kG4pqUNtPrlADRfILf1XPmL61VupvR/JAyglsZ8uiv+QuWwhZExOrXrMIyuJ6p91ioO7qhd9LpO+XIMiTqNA==
   dependencies:
     "@ant-design/icons" "^2.1.1"
     "@ant-design/icons-vue" "^2.0.0"
