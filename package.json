@@ -21,7 +21,7 @@
     }
   },
   "dependencies": {
-    "@nuxt/content": "^1.8.1",
+    "@nuxt/content": "^2.4.1",
     "@nuxtjs/axios": "^5.12.2",
     "ant-design-vue": "^1.6.5",
     "core-js": "^3.6.5",
